@@ -4,8 +4,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
-    <h1>hi</h1>
-</body>
+<body class="bg-[#f4f5f7]">
+   <div class="w-lg mx-auto bg-white">
+    <nav class="flex justify-between items-center p-4  border-b-1 border-[#ada8a880]">
+        <div class="flex justify-center items-center">
+            <img src="assets/Group.png" alt=""class="h-[50px]" >
+            <div><h1 class="font-bold text-[18px]">$ <span id="pre-amount">45000</span></h1>
+            <p class="text-[#08080880]">Available Balance</p>
+        </div>
+        </div>
+        <div class="">
+            <button class="btn text-[#08080880]"><i class="fa-solid fa-arrow-right-from-bracket rotate-180"></i> Log Out</button>
+        </div>
+    </nav>
+   </div>
+   <div class=" w-lg mx-auto  p-6  bg-white">
+      <h1 class="font-bold text-2xl">🔥 Welcome to Payooo!</h1>
+      <p class="text-[#08080880] mt-2.5 text-xl">Enjoy easy and convenient financial services with us. <br> Cashout charge is low and </p>
+      </div>
+
+      <div class="w-lg mx-auto  p-6 grid grid-cols-3 gap-3 bg-white rounded-b-2xl">
+        <div class="border-2 text-center border-[#b4b1b180] rounded-xl p-4">
+            <img src="assets/purse1.png" alt="" class="mx-auto">
+            <p>Add Money</p>
+        </div>
+        <div class="border-2 text-center border-[#b4b1b180] rounded-xl p-4">
+            <img src="assets/send1.png" alt="" class="mx-auto">
+            <p>cashout</p>
+        </div>
+        <div class="border-2 text-center border-[#b4b1b180] rounded-xl p-4">
+            <img src="assets/money1.png" alt="" class="mx-auto">
+            <p>Transfer Money</p>
+        </div>
+        <div class="border-2 text-center border-[#b4b1b180] rounded-xl p-4">
+            <img src="assets/bonus1.png" alt="" class="mx-auto">
+            <p>Get Bonus</p>
+        </div>
+        <div class="border-2 text-center border-[#b4b1b180] rounded-xl p-4 ">
+            <img src="assets/wallet1.png" alt="" class="mx-auto">
+            <p>Pay Bill</p>
+        </div>
+        <div class="border-2 text-center border-[#b4b1b180] rounded-xl p-4 ">
+            <img src="assets/transaction1.png" alt="" class="mx-auto">
+            <p>Transactions</p>
+        </div>
+      </div>
+
+      <h1 class="w-lg mx-auto font-bold text-2xl my-4 ">Add Money</h1>
+
+      <div class="w-lg mx-auto bg-white p-6 rounded-2xl">
+        <label for="" class="text-[#080808c1] font-bold">Select A Back</label> <br>
+        <select class="select bg-[#f4f5f7] rounded-2xl border-0 my-3 w-full  text-[#6f61618e] "> 
+          <option>Select bank</option>
+          <option>Rupali</option>
+          <option>Sonali</option>
+          <option>Dutch Bagla Bank</option>
+        </select> <br>
+        <label for=""class="font-bold text-[#080808c1]">Bank Acccount Number</label> <br>
+      <input type="number"  id="actnum" placeholder="Enter 11 Digit account number" class="input input-neutral bg-[#f4f5f7] rounded-2xl border-0 my-3 w-full " /> <br>
+      <label for=""class="font-bold text-[#080808c1]">Amount To Add</label> <br>
+      <input type="number" id="input-addamount" placeholder="Enter Amount to withdraw" class="input input-neutral bg-[#f4f5f7] rounded-2xl border-0 my-3 w-full  " /> <br>
+    <label for=""class="font-bold text-[#080808c1]">Pin number</label> <br>
+      <input type="number" id="bank-pin" placeholder="Enter 4 digit pin number" class="input input-neutral bg-[#f4f5f7] rounded-2xl border-0 my-3  w-full" /> <br>
+      <button type="button" id="add-money-btn" class="btn btn-primary mt-4 w-full rounded-2xl">Login</button>
+
+      </div>
+      <script src="home.js"></script>
+    </body>
 </html>
