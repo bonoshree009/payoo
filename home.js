@@ -18,23 +18,23 @@ document.getElementById("add-money-btn").addEventListener("click",function(){
    }
 })
  //cash out section
-// document.getElementById("cashout-btn").addEventListener("click",function(){
-//     //console.log("cliced")
-//     const withdraw_amount = parseInt(document.getElementById("amount").value)
-//     const preamount = parseInt(document.getElementById("pre-amount").innerText)
-//     const agentnum = document.getElementById("agent-number").value
-//     // console.log(addamount,preamount)
-//    const bankpin = parseInt( document.getElementById("bank-pin").value  )
-// //   console.log(bankpin)
-//    if(pin == bankpin && (agentnum.length === 11)){
-//     const after_withdraw = preamount - withdraw_amount
-//    document.getElementById("pre-amount").innerText = after_withdraw
-//    console.log("withdraw money")
-//    }
-//    else{
-//     alert("Your pin number is wrong")
-//    }
-// })
+document.getElementById("cashout-btn").addEventListener("click",function(){
+    //console.log("cliced")
+    const withdraw_amount = parseInt(document.getElementById("amount").value)
+    const preamount = parseInt(document.getElementById("pre-amount").innerText)
+    const agentnum = document.getElementById("agent-number").value
+    // console.log(addamount,preamount)
+   const bankpin = parseInt( document.getElementById("bank-pin").value  )
+//   console.log(bankpin)
+   if(pin == bankpin && (agentnum.length === 11)){
+    const after_withdraw = preamount - withdraw_amount
+   document.getElementById("pre-amount").innerText = after_withdraw
+   console.log("withdraw money")
+   }
+   else{
+    alert("Your pin number is wrong")
+   }
+})
 
 //toggol section
   document.getElementById("addMoney").addEventListener("click",function(){
