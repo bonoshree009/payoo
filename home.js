@@ -46,20 +46,37 @@ document.getElementById("cashout-btn").addEventListener("click",function(){
 })
 
 //toggol section
+
   document.getElementById("addMoney").addEventListener("click",function(){
-           document.getElementById("cashout-div ").style.display = "none"
-           document.getElementById("addmoney-div").style.display = "block"
-           console.log("add money button clicked")
-           document.getElementById("addMoney").style.backgroundColor = "green"
-            document.getElementById("cashOut").style.backgroundColor = "white"
+      //    const forms = document.getElementsByClassName("form-parent")
+      // for(const form of forms){
+      //   form.style.display = "none"
+      // }
+      // document.getElementById("addmoney-div").style.display = "block"
+       toggol("addmoney-div")
+       // console.log("add money button clicked")
+         //   document.getElementById("addMoney").style.backgroundColor = "green"
+         //    document.getElementById("cashOut").style.backgroundColor = "white"
 
   })
    document.getElementById("cashOut").addEventListener("click",function(){
-           document.getElementById("cashout-div ").style.display = "block"
-           document.getElementById("addmoney-div").style.display = "none"
-           console.log("cash out button clicked")
-            document.getElementById("addMoney").style.backgroundColor = "white"
-            document.getElementById("cashOut").style.backgroundColor = "green"
+
+        toggol("cashout-div")
+        console.log("cash out button clicked")
+
+          // console.log("cash out button clicked")
+            // document.getElementById("addMoney").style.backgroundColor = "white"
+            // document.getElementById("cashOut").style.backgroundColor = "green"
 
 
   })
+   function toggol(id){
+      const forms = document.getElementsByClassName("form-parent")
+      for(const form of forms){
+        form.style.display = "none"
+      }
+      document.getElementById(id).style.display = "block"
+
+      }
+
+   
