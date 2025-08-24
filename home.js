@@ -54,6 +54,7 @@ document.getElementById("cashout-btn").addEventListener("click",function(){
       // }
       // document.getElementById("addmoney-div").style.display = "block"
        toggol("addmoney-div")
+       hoberButton("addMoney")
        // console.log("add money button clicked")
          //   document.getElementById("addMoney").style.backgroundColor = "green"
          //    document.getElementById("cashOut").style.backgroundColor = "white"
@@ -63,6 +64,8 @@ document.getElementById("cashout-btn").addEventListener("click",function(){
 
         toggol("cashout-div")
         console.log("cash out button clicked")
+         hoberButton("cashOut")
+
 
           // console.log("cash out button clicked")
             // document.getElementById("addMoney").style.backgroundColor = "white"
@@ -78,5 +81,24 @@ document.getElementById("cashout-btn").addEventListener("click",function(){
       document.getElementById(id).style.display = "block"
 
       }
+
+      //function of hover
+      function hoberButton(id){
+       const hovers = document.getElementsByClassName("btn-hover")
+      for(const hover of hovers){
+       // hover.style.backgroundColor = "white"
+        hover.classList.remove("border-[#2081F2]","bg-[#F4F9FE]")
+         hover.classList.add("border-[#b4b1b180]")
+      }
+     document.getElementById(id).classList.add("border-[#2081F2]","bg-[#F4F9FE]")
+        document.getElementById(id).classList.remove("border-[#b4b1b180]")
+         //document.getElementById(id).style.backgroundColor = "#F4F9FE"
+   //   document.getElementById(id).style.border = "5px"
+   //   document.getElementById(id).style.borderBlockColor = "#2081F2"
+
+
+      }
+
+
 
    
