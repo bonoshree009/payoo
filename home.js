@@ -41,9 +41,16 @@ document.getElementById("cashout-btn").addEventListener("click",function(){
            document.getElementById("cashout-div ").style.display = "none"
            document.getElementById("addmoney-div").style.display = "block"
            console.log("yep")
+           document.getElementById("addMoney").style.backgroundColor = "green"
+            document.getElementById("cashOut").style.backgroundColor = "white"
+
   })
    document.getElementById("cashOut").addEventListener("click",function(){
            document.getElementById("cashout-div ").style.display = "block"
            document.getElementById("addmoney-div").style.display = "none"
            console.log("out")
+            document.getElementById("addMoney").style.backgroundColor = "white"
+            document.getElementById("cashOut").style.backgroundColor = "greengit"
+
+
   })
