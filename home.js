@@ -4,19 +4,27 @@ const pin = 1234
 //function
 
 function convertnum (id){
-    return parseInt(document.getElementById(id).value)
+  return  parseInt(document.getElementById(id).value)
 }
+function innertextnum (idinner){
+    return parseInt(document.getElementById(idinner).innerText)
+}
+function onlyValueToNum (valueid){
+    return document.getElementById(valueid).value
+}
+  
+// addmoney btn
 
 document.getElementById("add-money-btn").addEventListener("click",function(){
     //console.log("cliced")
    const addamount = convertnum("input-addamount")
-    const preamount = parseInt(document.getElementById("pre-amount").innerText)
-    const accountnum = document.getElementById("actnum").value
+    const preamount = innertextnum("pre-amount")
+    const accountnum = onlyValueToNum("actnum")
     console.log(addamount,preamount)
    const bankpin = convertnum("bank-pin")
-//   console.log(bankpin)
+      //console.log(bankpin)
    if(pin == bankpin && (accountnum.length === 11)){
-    //const total = addamount + preamount
+    const total = addamount + preamount
    document.getElementById("pre-amount").innerText = total
    console.log("add the money")
    }
@@ -30,11 +38,11 @@ document.getElementById("add-money-btn").addEventListener("click",function(){
 document.getElementById("cashout-btn").addEventListener("click",function(){
     //console.log("cliced")
     const withdraw_amount = convertnum("amount")
-    const preamount = parseInt(document.getElementById("pre-amount").innerText)
-    const agentnum = document.getElementById("agent-number").value
-     console.log(withdraw_amount,preamount)
-   const bankpin = parseInt(document.getElementById("bank-pin").value)
- console.log(bankpin)
+    const preamount = innertextnum("pre-amount")
+    const agentnum = onlyValueToNum("agent-number")
+   console.log(withdraw_amount,preamount)
+   const bankpin = convertnum("bank-pin")
+  // console.log(bankpin)
    if(pin == bankpin && (agentnum.length === 1)){
     const after_withdraw = preamount - withdraw_amount
    document.getElementById("pre-amount").innerText = after_withdraw
@@ -45,7 +53,35 @@ document.getElementById("cashout-btn").addEventListener("click",function(){
    }
 })
 
+
+// transfer btn
+
 //toggol section
+       function toggol(id){
+         const forms = document.getElementsByClassName("form-parent")
+            for(const form of forms){
+              form.style.display = "none"
+             }
+          document.getElementById(id).style.display = "block"
+ 
+              }
+
+//function of hover
+      function hoberButton(id){
+       const hovers = document.getElementsByClassName("btn-hover")
+      for(const hover of hovers){
+    // hover.style.backgroundColor = "white"
+        hover.classList.remove("border-[#2081F2]","bg-[#F4F9FE]")
+         hover.classList.add("border-[#b4b1b180]")
+      }
+     document.getElementById(id).classList.add("border-[#2081F2]","bg-[#F4F9FE]")
+        document.getElementById(id).classList.remove("border-[#b4b1b180]")
+         //document.getElementById(id).style.backgroundColor = "#F4F9FE"
+   //   document.getElementById(id).style.border = "5px"
+   //   document.getElementById(id).style.borderBlockColor = "#2081F2"
+
+      }
+
 
   document.getElementById("addMoney").addEventListener("click",function(){
       //    const forms = document.getElementsByClassName("form-parent")
@@ -73,32 +109,32 @@ document.getElementById("cashout-btn").addEventListener("click",function(){
 
 
   })
-   function toggol(id){
-      const forms = document.getElementsByClassName("form-parent")
-      for(const form of forms){
-        form.style.display = "none"
-      }
-      document.getElementById(id).style.display = "block"
 
-      }
+  document.getElementById("transferMoney").addEventListener("click",function(){
+       toggol("transfer-div")
+       hoberButton("transferMoney")
 
-      //function of hover
-      function hoberButton(id){
-       const hovers = document.getElementsByClassName("btn-hover")
-      for(const hover of hovers){
-       // hover.style.backgroundColor = "white"
-        hover.classList.remove("border-[#2081F2]","bg-[#F4F9FE]")
-         hover.classList.add("border-[#b4b1b180]")
-      }
-     document.getElementById(id).classList.add("border-[#2081F2]","bg-[#F4F9FE]")
-        document.getElementById(id).classList.remove("border-[#b4b1b180]")
-         //document.getElementById(id).style.backgroundColor = "#F4F9FE"
-   //   document.getElementById(id).style.border = "5px"
-   //   document.getElementById(id).style.borderBlockColor = "#2081F2"
+  })
 
+  document.getElementById("getBonus").addEventListener("click",function(){
+       toggol("bonus-div")
+       hoberButton("getBonus")
 
-      }
+  })
+   
+  document.getElementById("payBill").addEventListener("click",function(){
+       toggol("payBill-div")
+       hoberButton("payBill")
 
+  })
+   
+  document.getElementById("transaction").addEventListener("click",function(){
+       toggol("transfer-div")
+       hoberButton("transaction")
+
+  })
+   
+   
 
 
    
