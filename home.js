@@ -23,7 +23,7 @@ document.getElementById("add-money-btn").addEventListener("click",function(){
     //console.log(addamount,preamount)
    const bankpin = convertnum("bank-pin")
       //console.log(bankpin)
-   if(pin == bankpin && (accountnum.length === 2)){
+   if(pin == bankpin && (accountnum.length === 11)){
     const total = addamount + preamount
    document.getElementById("pre-amount").innerText = total
    console.log("add the money")
@@ -51,13 +51,13 @@ document.getElementById("cashout-btn").addEventListener("click",function(){
    //console.log(withdraw_amount,preamount)
    const bankpin = convertnum("bank-pin")
    //console.log(bankpin)
-   if(pin == bankpin && (agentnum.length === 2) && (withdraw_amount <= preamount) ){
+   if(pin == bankpin && (agentnum.length === 11) && (withdraw_amount <= preamount) ){
     const after_withdraw = preamount - withdraw_amount
    document.getElementById("pre-amount").innerText = after_withdraw
    console.log("withdraw money")
    }
    else{
-    alert("Your pin number is wrong")
+    alert("Your pin or amount is wrong")
    }
 
    const data = {
