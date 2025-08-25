@@ -48,10 +48,10 @@ document.getElementById("cashout-btn").addEventListener("click",function(){
     const withdraw_amount = convertnum("amount")
     const preamount = innertextnum("pre-amount")
     const agentnum = onlyValueToNum("agent-number")
-   console.log(withdraw_amount,preamount)
+   //console.log(withdraw_amount,preamount)
    const bankpin = convertnum("bank-pin")
-  // console.log(bankpin)
-   if(pin == bankpin && (agentnum.length === 2)){
+   //console.log(bankpin)
+   if(pin == bankpin && (agentnum.length === 2) && (withdraw_amount <= preamount) ){
     const after_withdraw = preamount - withdraw_amount
    document.getElementById("pre-amount").innerText = after_withdraw
    console.log("withdraw money")
@@ -93,6 +93,15 @@ document.getElementById("transaction").addEventListener("click",function(){
 })
 
 
+// transaction korar jonno prothome transaction er vitore akta cart design kore nia .Asbe
+// akta array nilam . protita button a akta Object
+//  create kore sei array te rakhlam.akhon transaction btn k get elelmentById dia event
+//  add korte hobe . transaction cart a akta outer div nibo ..sob new div tar moddhe Asbe .
+//  akhon add addEventListener er moddhe sei div er id k access kori getelementBtId dia,
+// akhon for loop dibo sei arrayr opr. vitore kaj hobe akta div create kora and sei div er innerhtml
+//  hisebe sei prothome banano cart er html ta templete literels er moddhe dia. just name ar time k dynamic kora.
+// sei div k puro transaction outer div a append kora . lastly sei outer div ar innertext a akta empty 
+// string rakha
 
 
 
