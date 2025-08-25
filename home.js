@@ -129,7 +129,7 @@ document.getElementById("cashout-btn").addEventListener("click",function(){
   })
    
   document.getElementById("transaction").addEventListener("click",function(){
-       toggol("transfer-div")
+       toggol("transaction-div")
        hoberButton("transaction")
 
   })

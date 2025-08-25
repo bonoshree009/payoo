@@ -92,6 +92,23 @@
       </div>
           </div>
 
+
+          <!-- money transfer form -->
+
+          <div id="transfer-div" class="form-parent">
+            <h1 class="w-lg mx-auto font-bold text-2xl my-4 ">Transfer money</h1>
+
+                 <div class="w-lg mx-auto bg-white p-6 rounded-2xl">
+        <label for="" class="text-[#080808c1] font-bold">User account Number</label> <br>
+         <input type="number"  id="agent-number" placeholder="Enter 11 Digit account number" class="input input-neutral bg-[#f4f5f7] rounded-2xl border-0 my-3 w-full " />  <br>
+        <label for=""class="font-bold text-[#080808c1]">Amount</label> <br>
+      <input type="number"  id="amount" placeholder="Enter amount to transfer" class="input input-neutral bg-[#f4f5f7] rounded-2xl border-0 my-3 w-full " /> <br>
+    <label for=""class="font-bold text-[#080808c1]">Pin number</label> <br>
+      <input type="number" id="bank-pin" placeholder="Enter 4 digit pin number" class="input input-neutral bg-[#f4f5f7] rounded-2xl border-0 my-3  w-full" /> <br>
+      <button type="button" id="transfer-btn" class="btn btn-primary mt-4 w-full rounded-2xl">WithDraw Money</button>
+      </div>
+          </div>
+
           <!-- get bonus form -->
 
             <div id="bonus-div" class="form-parent">
@@ -127,20 +144,48 @@
           </div>
 
 
-            <!-- money transfer form -->
+            <!-- transaction  form -->
 
-          <div id="transfer-div" class="form-parent">
-            <h1 class="w-lg mx-auto font-bold text-2xl my-4 ">Money Transfer</h1>
+          <div id="transaction-div" class="form-parent">
+            <div class=" w-lg mx-auto  my-4 flex items-center justify-between">
+            <h1 class=" font-bold text-2xl my-4 ">Latest Payment</h1>
+              <p class="text-[#6f6a6ac1]">view All</p>
+                 </div>
+            <!-- cart items -->
+                 <div class=" w-lg mx-auto  my-4 flex items-center justify-between bg-white p-4 rounded-2xl" >
+                       <div class="flex items-center gap-2">
+                             <div class="rounded-full p-2 bg-[#d4d4d4c1]"><img src="assets/wallet1.png" alt=""></div>
+                             <div>
+                              <h1 class="font-bold text-[#080808c1]">Electricity Bill</h1>
+                              <h3 class="text-[#6f6a6ac1]">today</h3>
+                             </div>
+                       </div>
+                       <div><i class="fa-solid fa-ellipsis-vertical"></i></div>
+                 </div>
 
-      <div class="w-lg mx-auto bg-white p-6 rounded-2xl">
-        <label for="" class="text-[#080808c1] font-bold">User Account number</label> <br>
-         <input type="number"  id="agent-number" placeholder="Enter 11 Digit account number" class="input input-neutral bg-[#f4f5f7] rounded-2xl border-0 my-3 w-full " />  <br>
-        <label for=""class="font-bold text-[#080808c1]">Amount</label> <br>
-      <input type="number"  id="amount" placeholder="Enter amount to transfer" class="input input-neutral bg-[#f4f5f7] rounded-2xl border-0 my-3 w-full " /> <br>
-    <label for=""class="font-bold text-[#080808c1]">Pin number</label> <br>
-      <input type="number" id="bank-pin" placeholder="Enter 4 digit pin number" class="input input-neutral bg-[#f4f5f7] rounded-2xl border-0 my-3  w-full" /> <br>
-      <button type="button" id="cashout-btn" class="btn btn-primary mt-4 w-full rounded-2xl">send now</button>
-      </div>
+
+
+                  <div class=" w-lg mx-auto  my-4 flex items-center justify-between bg-white p-4 rounded-2xl" >
+                       <div class="flex items-center gap-2">
+                             <div class="rounded-full p-2 bg-[#d4d4d4c1]"><img src="assets/wallet1.png" alt=""></div>
+                             <div>
+                              <h1 class="font-bold text-[#080808c1]">Electricity Bill</h1>
+                              <h3 class="text-[#6f6a6ac1]">today</h3>
+                             </div>
+                       </div>
+                       <div><i class="fa-solid fa-ellipsis-vertical"></i></div>
+                 </div>
+                 
+                  <div class=" w-lg mx-auto  my-4 flex items-center justify-between bg-white p-4 rounded-2xl" >
+                       <div class="flex items-center gap-2">
+                             <div class="rounded-full p-2 bg-[#d4d4d4c1]"><img src="assets/wallet1.png" alt=""></div>
+                             <div>
+                              <h1 class="font-bold text-[#080808c1]">Electricity Bill</h1>
+                              <h3 class="text-[#6f6a6ac1]">today</h3>
+                             </div>
+                       </div>
+                       <div><i class="fa-solid fa-ellipsis-vertical"></i></div>
+                 </div>
           </div>
      
       <script src="home.js"></script>
