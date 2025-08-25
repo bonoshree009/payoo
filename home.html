@@ -55,7 +55,7 @@
         </div>
       </div>
       <!-- all forms -->
-         
+        <!-- add money form  -->
      <div  class="form-parent" id="addmoney-div">
           <h1 class="w-lg mx-auto font-bold text-2xl my-4 ">Add Money</h1>
       <div class="w-lg mx-auto bg-white p-6 rounded-2xl">
@@ -76,11 +76,8 @@
       </div>
           </div>
      
-
-
-
-
-
+         <!-- cash out form -->
+        
       <div id="cashout-div" class="form-parent">
             <h1 class="w-lg mx-auto font-bold text-2xl my-4 ">Cash Out</h1>
 
@@ -88,13 +85,64 @@
         <label for="" class="text-[#080808c1] font-bold">Agent Number</label> <br>
          <input type="number"  id="agent-number" placeholder="Enter 11 Digit account number" class="input input-neutral bg-[#f4f5f7] rounded-2xl border-0 my-3 w-full " />  <br>
         <label for=""class="font-bold text-[#080808c1]">Amount</label> <br>
-      <input type="number"  id="amount" placeholder="EEnter amount to withdraw" class="input input-neutral bg-[#f4f5f7] rounded-2xl border-0 my-3 w-full " /> <br>
+      <input type="number"  id="amount" placeholder="Enter amount to withdraw" class="input input-neutral bg-[#f4f5f7] rounded-2xl border-0 my-3 w-full " /> <br>
     <label for=""class="font-bold text-[#080808c1]">Pin number</label> <br>
       <input type="number" id="bank-pin" placeholder="Enter 4 digit pin number" class="input input-neutral bg-[#f4f5f7] rounded-2xl border-0 my-3  w-full" /> <br>
       <button type="button" id="cashout-btn" class="btn btn-primary mt-4 w-full rounded-2xl">WithDraw Money</button>
       </div>
           </div>
-    
+
+          <!-- money transfer form -->
+
+          <div id="transfer-div" class="form-parent">
+            <h1 class="w-lg mx-auto font-bold text-2xl my-4 ">Money Transfer</h1>
+
+      <div class="w-lg mx-auto bg-white p-6 rounded-2xl">
+        <label for="" class="text-[#080808c1] font-bold">User Account number</label> <br>
+         <input type="number"  id="agent-number" placeholder="Enter 11 Digit account number" class="input input-neutral bg-[#f4f5f7] rounded-2xl border-0 my-3 w-full " />  <br>
+        <label for=""class="font-bold text-[#080808c1]">Amount</label> <br>
+      <input type="number"  id="amount" placeholder="Enter amount to transfer" class="input input-neutral bg-[#f4f5f7] rounded-2xl border-0 my-3 w-full " /> <br>
+    <label for=""class="font-bold text-[#080808c1]">Pin number</label> <br>
+      <input type="number" id="bank-pin" placeholder="Enter 4 digit pin number" class="input input-neutral bg-[#f4f5f7] rounded-2xl border-0 my-3  w-full" /> <br>
+      <button type="button" id="cashout-btn" class="btn btn-primary mt-4 w-full rounded-2xl">send now</button>
+      </div>
+          </div>
+
+
+          <!-- get bonus form -->
+
+            <div id="bonus-div" class="form-parent">
+            <h1 class="w-lg mx-auto font-bold text-2xl my-4 ">get Bonus</h1>
+
+      <div class="w-lg mx-auto bg-white p-6 rounded-2xl">
+        <label for="" class="text-[#080808c1] font-bold">Enter Bonus Coupon</label> <br>
+         <input type="number"  id="agent-number" placeholder="Enter your Coupon" class="input input-neutral bg-[#f4f5f7] rounded-2xl border-0 my-3 w-full " />  <br>
+      <button type="button" id="cashout-btn" class="btn btn-primary mt-4 w-full rounded-2xl">Get Bonus</button>
+      </div>
+          </div>
+
+<!--  pay bill -->
+
+           <div  class="form-parent" id="payBill-div">
+          <h1 class="w-lg mx-auto font-bold text-2xl my-4 ">Pay Bill</h1>
+      <div class="w-lg mx-auto bg-white p-6 rounded-2xl">
+        <label for="" class="text-[#080808c1] font-bold">Select to Pay</label> <br>
+        <select class="select bg-[#f4f5f7] rounded-2xl border-0 my-3 w-full  text-[#6f61618e] "> 
+          <option>Select bank</option>
+          <option>Rupali</option>
+          <option>Sonali</option>
+          <option>Dutch Bagla Bank</option>
+        </select> <br>
+        <label for=""class="font-bold text-[#080808c1]">Biller Acccount Number</label> <br>
+      <input type="number"  id="actnum" placeholder="Enter 11 Digit account number" class="input input-neutral bg-[#f4f5f7] rounded-2xl border-0 my-3 w-full " /> <br>
+      <label for=""class="font-bold text-[#080808c1]">Amount To Pay</label> <br>
+      <input type="number" id="input-addamount" placeholder="Enter Amount to pay" class="input input-neutral bg-[#f4f5f7] rounded-2xl border-0 my-3 w-full  " /> <br>
+    <label for=""class="font-bold text-[#080808c1]">Pin number</label> <br>
+      <input type="number" id="bank-pin" placeholder="Enter 4 digit pin number" class="input input-neutral bg-[#f4f5f7] rounded-2xl border-0 my-3  w-full" /> <br>
+      <button type="button" id="add-money-btn" class="btn btn-primary mt-4 w-full rounded-2xl">Login</button>
+      </div>
+          </div>
+     
       <script src="home.js"></script>
     </body>
 </html>
